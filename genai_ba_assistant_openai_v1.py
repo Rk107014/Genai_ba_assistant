@@ -1,8 +1,10 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-python-dotenv
 from openai import AzureOpenAI
+streamlit
+openai
+python-dotenv
 
 # Load environment variables
 load_dotenv()
