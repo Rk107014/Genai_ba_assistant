@@ -2,7 +2,9 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 from openai import AzureOpenAI
-
+streamlit
+openai
+python-dotenv
 # Load environment variables
 load_dotenv()
 endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
