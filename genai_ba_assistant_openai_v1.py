@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 from openai import AzureOpenAI
-python-dotenv
 
 # Load environment variables
 import streamlit as st
