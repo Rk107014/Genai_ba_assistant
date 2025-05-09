@@ -1,22 +1,20 @@
 import streamlit as st
 import os
 from openai import AzureOpenAI
-openai
 python-dotenv
 
 # Load environment variables
 import streamlit as st
 
+# Load from secrets (if using Streamlit secrets)
 api_key = st.secrets["AZURE_OPENAI_API_KEY"]
 endpoint = st.secrets["AZURE_OPENAI_ENDPOINT"]
 api_version = st.secrets["AZURE_OPENAI_API_VERSION"]
 deployment = st.secrets["AZURE_OPENAI_DEPLOYMENT"]
 
-
-# Create AzureOpenAI client
 client = AzureOpenAI(
-    azure_endpoint=endpoint,
     api_key=api_key,
+    azure_endpoint=endpoint,
     api_version=api_version
 )
 
