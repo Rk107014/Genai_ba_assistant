@@ -24,7 +24,7 @@ def genai_response(prompt):
             ],
             temperature=0.7
         )
-        return response.choices[0].message.content.strip()
+        return response
     except Exception as e:
         st.error(f"[ERROR] {e}")
         return None
